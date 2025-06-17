@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/refil
     - name: KinesisCorporation
       url-base: https://github.com/kinesiscorporation
+    - name: dpicken
+      url-base: https://github.com/dpicken
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -14,9 +16,9 @@ manifest:
       revision: disable-endpoint-fallback
       import: app/west.yml
     - name: MWave-zephyr-module
-      remote: KinesisCorporation
+      remote: dpicken
       import: config/west.yml
-      revision: main
+      revision: dpicken
     - name: zmk-settings-reset-bootloader-module
       remote: refil
       revision: main
